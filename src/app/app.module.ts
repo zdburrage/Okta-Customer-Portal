@@ -27,6 +27,7 @@ import { MessagesComponent } from './messages/messages.component';
 import { ProfileComponent } from './profile/profile.component';
 
 import oktaConfig from './app.config.local';
+import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 
 const oktaAuth = new OktaAuth(oktaConfig.oidc);
 
@@ -61,9 +62,10 @@ const appRoutes: Routes = [
   imports: [
     BrowserModule,
     HttpClientModule,
-    RouterModule.forRoot(appRoutes, {useHash: true}),
+    RouterModule.forRoot(appRoutes),
     OktaAuthModule.forRoot({ oktaAuth })
   ],
+  providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}],
   bootstrap: [AppComponent],
 })
 export class AppModule { }
