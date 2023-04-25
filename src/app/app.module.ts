@@ -65,7 +65,6 @@ const appRoutes: Routes = [
     RouterModule.forRoot(appRoutes),
     OktaAuthModule.forRoot({ oktaAuth })
   ],
-  providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}],
   bootstrap: [AppComponent],
 })
 export class AppModule { }
