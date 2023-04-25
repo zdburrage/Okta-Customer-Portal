@@ -4,7 +4,7 @@ export default {
     clientId: '0oa4gmq326JdyDCmN697',
     issuer: 'https://oktalogin.zacsandbox.com/oauth2/default',
     redirectUri: `http://localhost:4200/login/callback`,
-    scopes: ['openid', 'profile', 'email', 'read:messages'],
+    scopes: ['openid', 'profile', 'email'],
     testing: {
       disableHttpsCheck: true
     }
