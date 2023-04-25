@@ -58,7 +58,8 @@
                   "with": "src/app/app.config.prod-a.ts"
                 }
               ],
-              "outputHashing": "all"
+              "outputHashing": "all",
+              "sourceMap": true
             },
             "production-b": {
               "budgets": [
@@ -83,7 +84,8 @@
                   "with": "src/app/app.config.prod-b.ts"
                 }
               ],
-              "outputHashing": "all"
+              "outputHashing": "all",
+              "sourceMap": true
             },
             
             "development": {
