@@ -3,7 +3,7 @@
 export default {
   oidc: {
     clientId: '0oa4gmq326JdyDCmN697',
-    issuer: 'https://okta-company-b.zacsandbox.com/oauth2/default',
+    issuer: 'https://okta-company-b.zacsandbox.com/oauth2/aus55130uqDFjWtHM697',
     redirectUri: `https://customer-portal-b.zacsandbox.com/login/callback`,
     scopes: ['openid', 'profile', 'email', 'read:messages'],
     testing: {
